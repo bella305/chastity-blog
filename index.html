@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Choosing Love, Choosing Respect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary: #003366;
+      --accent: #0066cc;
+      --bg: #f4f6f8;
+      --text: #1e1e1e;
+      --heading: #111;
+      --quote-bg: #e0ebf8;
+      --footer-bg: #001f3f;
+      --transition: all 0.3s ease;
+    }
+
+    [data-theme="dark"] {
+      --bg: #121212;
+      --text: #f0f0f0;
+      --heading: #ffffff;
+      --quote-bg: #1f2b3d;
+      --footer-bg: #000a1a;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      transition: var(--transition);
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.85;
+    }
+
+    .theme-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: #ffffff22;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.2s ease;
+    }
+
+    .theme-toggle:hover {
+      background: #ffffff44;
+    }
+
+    nav {
+      background: #ffffffcc;
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      padding: 1rem;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: var(--transition);
+    }
+
+    section.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section h2 {
+      color: var(--heading);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    p, li {
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+
+    .quote {
+      background: var(--quote-bg);
+      border-left: 5px solid var(--primary);
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: var(--footer-bg);
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      section h2 {
+        font-size: 1.5rem;
+      }
+      nav {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Choosing Love, Choosing Respect</h1>
+    <p>A Catholic Teen’s Perspective on Chastity & True Love</p>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+  </header>
+
+  <nav>
+    <a href="#relationships">Why Relationships Matter</a>
+    <a href="#facts">Teens & Sexuality</a>
+    <a href="#pressure">Peer Pressure</a>
+    <a href="#intimacy">Intimacy</a>
+    <a href="#chastity">Chastity</a>
+    <a href="#message">Final Message</a>
+  </nav>
+
+  <main>
+    <section id="relationships">
+      <h2>1. Why Do Relationships Matter?</h2>
+      <p>
+        Relationships shape who we are. Whether with family, friends, or someone we're dating, each connection helps us grow. As teens, we begin to experience deeper bonds built on trust, honesty, and care. The Catholic faith reminds us that love isn't just an emotion—it’s a choice rooted in sacrifice, patience, and fidelity, modeled after God’s love.
+      </p>
+    </section>
+
+    <section id="facts">
+      <h2>2. Sexuality and Teens</h2>
+      <p>
+        According to a 2022 report from Statistics Canada, 24% of teens aged 15–19 reported having had sexual intercourse—often influenced by curiosity or peer pressure. Meanwhile, sexually transmitted infections are rising, and many teens feel unprepared to make informed decisions. Media often glamorizes sex, ignoring its deeper emotional and spiritual impact. Learning the facts empowers us to choose wisely.
+      </p>
+    </section>
+
+    <section id="pressure">
+      <h2>3. Peer Pressure & Social Media</h2>
+      <p>
+        Today’s teens navigate constant pressure from social media, peers, and pop culture. Jokes about relationships or sex, viral challenges, or idealized portrayals online can create unrealistic expectations. But true courage lies in staying rooted in your values. You are not alone if you choose to wait. Your worth is not defined by trends, but by your character and integrity.
+      </p>
+    </section>
+
+    <section id="intimacy">
+      <h2>4. The Church’s View on Intimacy</h2>
+      <p>
+        The Catholic Church teaches that sexuality is sacred—a gift meant to be fully expressed within marriage. It’s more than physical intimacy; it’s a sign of total, self-giving love. The Catechism explains that sex should unite spouses and be open to life. When intimacy is rooted in love and commitment, it reflects God’s divine love for humanity.
+      </p>
+    </section>
+
+    <section id="chastity">
+      <h2>5. The Church’s View on Chastity</h2>
+      <p>
+        Chastity is not just about “no”—it’s a powerful “yes” to real love. It calls us to love selflessly, without using others. Living chastely protects our dignity and that of others, helping us grow into people who love like Christ. It's not about restriction—it's about freedom, strength, and choosing what’s best for our future.
+      </p>
+    </section>
+
+    <section id="message">
+      <h2>6. A Final Message: Teen to Teen</h2>
+      <div class="quote">
+        "If you're reading this and feeling pressure, you're not alone. Choosing chastity is brave. You are not behind, and you are not weird. You were made for real, lasting love. Wait for someone who honors your heart, body, and soul—you are worth it."
+      </div>
+    </section>
+
+    <section id="citations">
+      <h2>Works Cited (MLA Format)</h2>
+      <ul>
+        <li>Catholic Church. <em>Catechism of the Catholic Church</em>. 2nd ed., Libreria Editrice Vaticana, 2019.</li>
+        <li>Statistics Canada. “Canadian Community Health Survey – Sexual Health.” 2022. <a href="https://www.statcan.gc.ca">www.statcan.gc.ca</a>.</li>
+        <li>Evert, Jason. <em>Chastity: The Hidden Power</em>. Totus Tuus Press, 2021.</li>
+        <li>Life Teen. “What Does the Church Actually Say About Sex?” <a href="https://www.lifeteen.com">LifeTeen.com</a>.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Chastity Blog – Written by Grade 10 Catholic Student Contributors. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      const button = document.querySelector(".theme-toggle");
+      if (currentTheme === "dark") {
+        document.documentElement.removeAttribute("data-theme");
+        button.textContent = "🌙 Dark Mode";
+      } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+        button.textContent = "☀️ Light Mode";
+      }
+    }
+
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
+
+
